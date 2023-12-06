@@ -16,7 +16,9 @@ func main() {
 			log.Println(err)
 			break
 		}
-		calibration += advent.Trebuchet(line)
+		result := advent.Trebuchet(line)
+		log.Println(line, result)
+		calibration += result
 	}
 	fmt.Println(calibration)
 }
